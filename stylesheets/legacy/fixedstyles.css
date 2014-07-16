@@ -1,0 +1,10 @@
+td[id*="_tdCVV"]{
+	max-height:20px;
+	overflow:hidden;
+}
+span[id*="_lblCVV"]{
+	display:block;
+	max-height:20px;
+	overflow:hidden;
+	float:left;
+}

@@ -1,0 +1,407 @@
+/* style.css for titan */
+body{
+	font-family:arial, sans-serif;
+}
+a:hover{
+	color:#A80000;
+	text-decoration:none;
+}
+p{
+	padding-right:10px;
+}
+table, tr, td{
+	padding:0px;
+	margin:0px;
+	border-spacing:0px;
+}
+
+.General_Caption{
+	display:block;
+	margin-top:20px;
+}
+.General_Result_HeaderRow{
+	font-weight:bold;
+}
+.Footer_Security_Table{
+	display:none;
+}
+#ctl00_CPH1_FooterControl1_trPoweredAndSecurity{
+	display:block;
+	float:right;
+	padding-bottom:20px;
+}
+#ctl00_CPH1_FooterControl1_lblSiteSecurity{
+	margin-right:10px;
+}
+
+/* EVENT SELECTION */
+
+#ctl00_CPH1_PageCaptionControl1_Label1{
+	padding-right:10px;
+}
+.CinemaSelectEventPage_EventMaster_Table{
+	border-spacing:0px 10px;
+}
+.CinemaSelectEventPage_Table_EventMasterCell{
+	font-weight:bold;
+	font-size:1.1em;
+}
+.CinemaSelectEventPage_EventMaster_Row>td, .CinemaSelectEventPage_EventMaster_AlternateRow>td{
+	margin-bottom:9px;
+	border:thin solid black;
+}
+
+.CinemaSelectEventPage_Table_Venue{
+	display:none;
+}
+
+.CinemaSelectEventPage_Table_RatingCell, .CinemaSelectEventPage_Table_LengthCell{
+	padding-left:12px;
+}
+
+#ctl00_CPH1_LnkSelectDate, #ctl00_CPH1_lnkSearch{
+	display:none;
+}
+
+.CinemaSelectEventPage_Events_Table{
+	border:none;
+}
+.CinemaSelectEventPage_Events_Table_DateTimeCell_Expired, .CinemaSelectEventPage_Events_Table_DateTimeCell_General{
+	border:none !important;
+	border:none;
+}
+
+/* TICKET SELECTION */
+.SessionInformation_Table{
+	/*margin-left:5px;*/
+}
+.SessionInformation_Label_Site{
+	display:none;
+}
+.SessionInformation_Label_EventMaster{
+	font-weight:bold;
+	font-size:1.1em;
+}
+.SessionInformation_Label_DateTime{
+	display:block;
+	padding-left:20px;
+}
+
+.General_Result_Row td, .General_Result_HeaderRow th{
+	border:none;
+}
+
+#ctl00_CPH1_SelectTicketControl1_rptTicketSelectionGrid_ctl00_TicketsSelection{
+	width:95% !important;
+	border-collapse:separate;
+	border-spacing: 0px 10px !important;
+	border:thin solid black;
+}
+#ctl00_CPH1_SelectTicketControl1_rptTicketSelectionGrid_ctl00_TicketsSelection .General_Result_Row{
+	border:thin solid black;
+	border-left:thin solid black !important;
+	border-right:thin solid black !important;
+}
+#ctl00_CPH1_SelectTicketControl1_rptTicketSelectionGrid_ctl00_TicketsSelection .General_Result_Row span{
+	display:block; padding-top:5px; padding-bottom:5px;
+}
+#ctl00_CPH1_SelectTicketControl1_rptTicketSelectionGrid_ctl00_TicketsSelection .General_Result_Row>td{
+	min-width:65px;
+}
+#ctl00_CPH1_SelectTicketControl1_rptTicketSelectionGrid_ctl00_TicketsSelection .General_Result_Row td:first-child{
+	padding-left: 3px;
+	min-width:20px;
+}
+
+/* Shopping Cart */
+#ctl00_CPH1_SessionInfoTimerControl1_cntDown{
+	margin-bottom:15px;
+}
+#ctl00_CPH1_CartContentControl1_rCartItemsRepeater_ctl00_trItemCartRow td span{
+	display:block;
+	margin-top:10px;
+}
+#ctl00_CPH1_SessionInfoTimerControl1_cntDown{
+	/*margin-left:10px;*/
+}
+
+span[id*="Venue"], span[id*="venue"]{
+	display:none !important;
+}
+span[id*="_lblTotal"]{
+	font-weight:bold;
+	font-size:1.2em;
+}
+#ctl00_CPH1_lblTitle{
+	font-weight:bold;
+	font-size:1.5em;
+}
+#ctl00_CPH1_CartContentControl1_lblTaxAndFees{
+	/*padding-left:10px;*/
+}
+a[id*="_deleteCur"] {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+/* Order Form */
+/* ALL THIS MUST BE UPDATED TO WORK WITH IE!!!!!!!!!!!!!! */
+
+/*#ctl00_CPH1_OrderFormControl1_PersonalInformationTable tbody tr:nth-child(6), 
+#ctl00_CPH1_OrderFormControl1_PersonalInformationTable tbody tr:nth-child(7){
+	display:none;
+}
+#ctl00_CPH1_OrderFormControl1_PersonalInformationTable tbody tr:nth-child(8){
+	border:thin solid black;
+}*/
+#ctl00_CPH1_OrderFormControl1_PersonalInformationTable tbody tr:nth-child(8) td:first-child{
+	vertical-align: top;
+}
+
+.SessionInformation_Table{
+	/*padding-left:10px;*/
+}
+#ctl00_CPH1_OrderFormControl1_SessionInfoTimerControl1_cntDown{
+	margin-bottom:20px;
+}
+
+#ctl00_CPH1_OrderFormControl1_Field_13, #ctl00_CPH1_OrderFormControl1_Field_14{
+	width:155px;
+}
+.OrderForm_PaymentsTable{
+
+	width:100%;
+}
+.OrderForm_PaymentsTable td{
+	min-width:0px;
+}
+.OrderForm_PaymentsTable tr td{
+	padding-right:15px;
+}
+#ctl00_CPH1_OrderFormControl1_MagneticCardEntryControl1_rptPayments_ctl00_tdCVV{
+	display:block;
+	max-height:20px;
+	max-width:45px;
+	overflow:hidden;
+}
+td[id*="_tdCVV"] input, td[id*="_tdCVV"]{
+	max-height:20px;
+	max-width:45px;
+	overflow:hidden;
+}
+#ctl00_CPH1_OrderFormControl1_MagneticCardEntryControl1_rptPayments_ctl01_tdCVV input, {
+	max-width:45px;
+}
+
+/* Keep the payment information inputs in line. */
+#ctl00_CPH1_OrderFormControl1_MagneticCardEntryControl1_rptPayments_ctl00_tdCardType{
+	width:130px;
+}
+#ctl00_CPH1_OrderFormControl1_MagneticCardEntryControl1_rptPayments_ctl00_tdCardNumber{
+	width:200px;
+}
+#ctl00_CPH1_OrderFormControl1_MagneticCardEntryControl1_rptPayments_ctl00_tdExpiration{
+	width:100px;
+}
+#ctl00_CPH1_OrderFormControl1_MagneticCardEntryControl1_rptPayments_ctl00_tdCVV {
+	width: 70px;
+}
+
+#ctl00_CPH1_OrderFormControl1_AddressInformationTable, #ctl00_CPH1_OrderFormControl1_PaymentInformationTable{
+	margin-top:15px;
+}
+
+/* Confirm Page */
+div[id*="_panelEvents"] table tbody tr td:nth-child(2){
+	display:block;
+	width:25px;
+	background:#A80000;
+	visibility:hidden;
+
+}
+#ctl00_CPH1_OrderReviewControl1_SeatsInformationTable, #ctl00_CPH1_OrderReviewControl1_DeliveryInformation{
+	display:none;
+}
+.General_WebControl_Table{
+	/*background-color:#A80000;*/
+}
+
+#ctl00_CPH1_OrderReviewControl1_EventInformationTable, 
+#ctl00_CPH1_OrderReviewControl1_TicketInformationTable, 
+#ctl00_CPH1_OrderReviewControl1_PersonalInformationTable, 
+#ctl00_CPH1_OrderReviewControl1_PaymentInformationTable{
+	/*margin-left:20px;*/
+	margin-bottom:10px;
+	border:thin solid black;
+	width:95%;
+}
+#ctl00_CPH1_OrderReviewControl1_lblTicketPriceCaption{
+	white-space: nowrap;
+}
+#ctl00_CPH1_OrderReviewControl1_lblTicketsTotalCaption{
+	display:block;
+	padding-top:20px;
+}
+#ctl00_CPH1_OrderReviewControl1_EventInformationTable .General_Result_HeaderRow, 
+#ctl00_CPH1_OrderReviewControl1_TicketInformationTable .General_Result_HeaderRow, 
+#ctl00_CPH1_OrderReviewControl1_PersonalInformationTable .General_Result_HeaderRow, 
+#ctl00_CPH1_OrderReviewControl1_PaymentInformationTable .General_Result_HeaderRow{
+	font-weight:bold;
+}
+#ctl00_CPH1_OrderReviewControl1_TicketInformationTable .General_Result_Row td:first-child{
+	width:100px !important;
+}
+
+.General_InformationMessage_Text label{
+	font-weight:bold;
+}
+#ctl00_CPH1_OrderReviewControl1_OrderSummaryTable{
+	margin-left:10px; padding-right:20px;
+}
+#ctl00_CPH1_OrderReviewControl1_OrderSummaryTable{
+	width:90%;
+}
+
+/*Online Receipt*/
+#ctl00_CPH1_lblCaption{
+	font-size:1.25em;
+	font-weight:bold;
+}
+#ctl00_CPH1_OrderCompleteControl1_Table1{
+	/*margin-left:10px;*/
+}
+#ctl00_CPH1_OrderCompleteControl1_lblThankYouText{
+	display:block;
+	margin-bottom:10px;
+}
+#ctl00_CPH1_OrderCompleteControl1_ReSubmitWarning{
+	display:block;
+	margin-top:20px;
+}
+#ctl00_CPH1_OrderCompleteControl1_ReSubmitWarning p{
+	margin:0px;
+	padding:0px;
+	margin-top:20px;
+}
+
+#ctl00_CPH1_OrderCompleteControl1_DeliveryInfoHeaderRow, #ctl00_CPH1_OrderCompleteControl1_DeliveryInfoRow{
+	display:none;
+}
+
+#ctl00_CPH1_OrderCompleteControl1_ConfirmationNumberHeaderRow{
+	border-top:thin solid black;
+}
+#ctl00_CPH1_OrderCompleteControl1_ConfirmationNumberRow, #ctl00_CPH1_OrderCompleteControl1_ConfirmationNumberHeaderRow{
+	border-left:thin solid black; border-right:thin solid black;	
+}
+#ctl00_CPH1_OrderCompleteControl1_ConfirmationNumberRow{
+	margin:5px;
+	padding:10px;
+	border-bottom:thin solid black;
+}
+
+
+/* Member Login */
+#ctl00_CPH1_CinemaStartControl1_imgWelcomeImage, #ctl00_CPH1_CinemaStartControl1_MainTable{
+	display:none;
+}
+
+/* Gift Card Site */
+#ctl00_CPH1_SelectProductGroupControl1_ctl01_UpdatePanel1 .Product_Table tr:nth-child(2){
+	
+}
+#ctl00_CPH1_SelectProductGroupControl1_ctl01_lblProductName{
+	font-size:1.25em;
+	font-weight:bold;
+}
+#ctl00_CPH1_SelectProductGroupControl1_ctl01_hlProductPicture{
+	display:none;
+}
+#ctl00_CPH1_BackButtonControl1_webtixsButtonClientSide{
+
+}
+
+/* Membership Purchase Pages */
+/* Select membership 
+#ctl00_CPH1_PageCaptionControl1_Label1{
+	font-size:1.25em;
+	font-weight:bold;
+}*/
+#ctl00_CPH1_SelectMemberProgramControl1_memberProgramDataGrid{
+	width:98% !important;
+	margin-left:10px;
+	padding-right:20px;
+}
+#ctl00_CPH1_SelectMemberProgramControl1_memberProgramDataGrid .General_Result_HeaderRow{
+	font-size:1.1em;
+}
+#ctl00_CPH1_SelectMemberProgramControl1_memberProgramDataGrid td[align="right"]{
+	text-align:left;
+}
+#ctl00_CPH1_SelectMemberProgramControl1_memberProgramDataGrid_ctl02_lblAmount{
+	padding-right:10px;
+}
+#ctl00_CPH1_SelectMemberProgramControl1_memberProgramDataGrid .General_Result_Row, #ctl00_CPH1_SelectMemberProgramControl1_memberProgramDataGrid .General_Result_AlternateRow{
+	border-top:thin solid black;
+	font-size:.9em;
+	font-weight:normal !important;
+}
+
+
+/* POST-LAUNCH FIXES, REFACTOR LATER */
+
+
+
+/* KEEPS FROM OVERFLOWING OUTSIDE OF IFRAME ON IE */
+.General_WebControl_Table{
+	max-width:850px;
+}
+
+#Table2{
+	max-width:850px;
+}
+
+/* FOR THE UPDATE PROFILE POPUP */
+
+#ctl00_CPH1_OrderFormControl1_PersonalInformationTable tbody tr td .General_Result_Text{
+	display:none;
+}
+
+#ctl00_CPH1_OrderFormControl1_Field_1{
+	display:block;
+}
+
+.hidetext{
+	display:none;
+}
+
+.reenterpw{
+	display:inline-block; 
+	padding-top:5px;
+}
+
+/* HIDE ORDER SUMMARY ON CONFIRMATION SCREEN SO THEY DON'T SEE THE "TAX" FOR SPECIAL EVENTS */
+#ctl00_CPH1_OrderReviewControl1_OrderSummaryTable{
+	display:none;
+}
+
+/* Hide the extra text above the logged-in options */
+#ctl00_CPH1_LogInControl2_lblResultHeader, #ctl00_CPH1_LogInControl2_lblMessage, #ctl00_CPH1_LoginControlNew1_lblResultHeader, #ctl00_CPH1_LoginControlNew1_lblMessage{
+	display:none;
+}
+
+.proceed-link{
+	color:#A80000;
+	text-decoration:underline;
+}
+.hover-helper:hover{
+	text-decoration:none;
+	color:#f00;
+}
+
+#ctl00_CPH1_LogInControl2_imgButLogin{
+	padding:25px;
+}
+#ctl00_CPH1_SelectTicketControl1_rptTicketSelectionGrid_ctl00_lblWarningLevelNotice{
+	display:none;
+}
