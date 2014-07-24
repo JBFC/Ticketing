@@ -299,6 +299,12 @@ div[id*="_panelEvents"] table tbody tr td:nth-child(2){
 	padding:10px;
 	border-bottom:thin solid black;
 }
+.ctl00_CPH1_OrderCompleteControl1_ConfirmationNumberHeaderRow td{
+	padding-top:1em; padding-left:1em; padding-bottom:.25em;
+}
+.ctl00_CPH1_OrderCompleteControl1_ConfirmationNumberRow td table tbody tr td{
+	padding-top:.2em; padding-left:1em; padding-bottom:1em;
+}
 
 
 /* Member Login */

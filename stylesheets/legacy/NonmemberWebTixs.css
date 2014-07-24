@@ -292,12 +292,18 @@ div[id*="_panelEvents"] table tbody tr td:nth-child(2){
 	border-top:thin solid black;
 }
 #ctl00_CPH1_OrderCompleteControl1_ConfirmationNumberRow, #ctl00_CPH1_OrderCompleteControl1_ConfirmationNumberHeaderRow{
-	border-left:thin solid black; border-right:thin solid black;	
+	border-left:thin solid black; border-right:thin solid black;
 }
 #ctl00_CPH1_OrderCompleteControl1_ConfirmationNumberRow{
 	margin:5px;
 	padding:10px;
 	border-bottom:thin solid black;
+}
+.ctl00_CPH1_OrderCompleteControl1_ConfirmationNumberHeaderRow td{
+	padding-top:1em; padding-left:1em; padding-bottom:.25em;
+}
+.ctl00_CPH1_OrderCompleteControl1_ConfirmationNumberRow td table tbody tr td{
+	padding-top:.2em; padding-left:1em; padding-bottom:1em;
 }
 
 
