@@ -12,7 +12,7 @@ function HandleMembershipStart(){
           if(loginPrompt.length > 0){ //We have found the login prompt
 
             //THE FOLLOWING LINE ADDS THIS PROMPT TO THE FRONT PAGE OF MEMBER TICKETING.
-            start.html("<h2 style='margin-top:0;'>Member Login</h2>Your membership number can be found on the back of your JBFC membership card or in the confirmation email you received if you recently joined. Your password is your member number unless you have updated it. <br/><br/>Questions? Review our Ticketing FAQ.<br/><br/>Contact us at <a href='mailto:support@burnsfilmcenter.org'>support@burnsfilmcenter.org</a> (day/evening/weekend) <br/>or 914.773.7663, ext. 6 (M-F, 9:30-5:30)").css("text-align", "left");
+            start.html("<h2 style='margin-top:0; padding-right:40px;'>Member Login</h2>Your membership number can be found on the back of your JBFC membership card or in the confirmation email you received if you recently joined. Your password is your member number unless you have updated it. <br/><br/><strong>Questions?</strong> Review our <a target='_blank' href='http://www.burnsfilmcenter.org/about/ticketing-faq'>Ticketing FAQ</a>.<br/><br/><strong>Contact us</strong> at <a href='mailto:support@burnsfilmcenter.org'>support@burnsfilmcenter.org</a> (day/evening/weekend) <br/>or 914.773.7663, ext. 6 (M-F, 9:30-5:30)").css("text-align", "left");
           
           }else{ //We didn't find the login prompt, we are already logged in.
             var txt = $("#ctl00_CPH1_LogInControl2_lblMessage");
